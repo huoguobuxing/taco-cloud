@@ -63,7 +63,9 @@ public class DesignTacoController {
 
 
     @PostMapping
-    public String processTaco(Taco taco,
+    public String processTaco(// taco来自请求
+                              Taco taco,
+                              // tacoOrder 来自model
                               @ModelAttribute TacoOrder tacoOrder) {
         tacoOrder.addTaco(taco);
         log.info("Processing taco: {}", taco);
