@@ -1,0 +1,2 @@
+server.port: 9000
+taco.orders.pageSize: 22
